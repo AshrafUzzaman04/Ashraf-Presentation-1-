@@ -51,6 +51,7 @@
   word-spacing: 6px;
   letter-spacing: 4px;
   font-weight: bold;
+  transition: 0.5s;
 }
 .header > .manubar li a:hover {
   color: rgb(59, 0, 0);
