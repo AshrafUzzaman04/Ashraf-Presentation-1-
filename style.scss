@@ -6,6 +6,14 @@
   font-family: manubar;
   src: url(./fonts/CormorantGaramond-Light.ttf);
 }
+@font-face {
+  font-family: hfont;
+  src: url(./fonts/JosefinSlab-SemiBoldItalic.ttf);
+}
+@font-face {
+  font-family: tdiv;
+  src: url(./fonts/Marcellus-Regular.ttf);
+}
 
 * {
   margin: 0;
@@ -17,7 +25,7 @@ $mybg: #d2a890;
 
 .first_div {
   width: 100%;
-  height: 600px;
+  height: 530px;
   background: linear-gradient(to right, #f2eadf, $mybg);
   padding: 30px;
 }
@@ -29,7 +37,10 @@ $mybg: #d2a890;
     font-size: 60px;
     font-family: icon;
     float: left;
-    color: #171310;
+    > a {
+      text-decoration: none;
+      color: #171310;
+    }
   }
   > .manubar {
     display: inline-flex;
@@ -57,8 +68,8 @@ $mybg: #d2a890;
       transition: 0.5s;
     }
     li a:hover {
-      color: rgb(59, 0, 0);
-      background-color: #dab199;
+      color: white;
+      background-color: #c7997f;
       border-radius: 8px;
     }
   }
@@ -84,4 +95,206 @@ $mybg: #d2a890;
       }
     }
   }
+}
+@mixin imagecode() {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+}
+.himg {
+  width: 600px;
+  float: left;
+  position: relative;
+  > img {
+    @include imagecode();
+
+    margin: 40px 0px;
+  }
+  > div {
+    float: right;
+
+    margin: 2px;
+    > span {
+      font-size: 50px;
+      background-color: #545d62;
+      color: white;
+      padding: 2px 12px;
+      font-family: hfont;
+    }
+  }
+  .aligningYour {
+    position: absolute;
+    top: 122px;
+    right: -166px;
+  }
+  .dreamLife {
+    position: absolute;
+    top: 192px;
+    right: -91px;
+  }
+  .andBuisness {
+    position: absolute;
+    top: 263px;
+    right: -140px;
+  }
+}
+
+.readingbook {
+  position: relative;
+  > img {
+    @include imagecode();
+    width: 310px;
+    margin: 40px 0px;
+    position: absolute;
+    top: -54px;
+    right: -30px;
+    clip-path: circle(50% at 83% 50%);
+  }
+}
+
+// second_div content
+
+.second_div {
+  width: 100%;
+  height: 500px;
+  background-color: #f4efeb;
+
+  .scontent {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+
+    position: relative;
+    > img {
+      @include imagecode();
+      width: 370px;
+      margin: 30px 0px;
+      position: absolute;
+      top: 0;
+      left: 60px;
+      clip-path: circle(49.7% at 11% 50%);
+    }
+    .stext {
+      width: 600px;
+
+      float: right;
+      position: relative;
+
+      > .onechild {
+        font-size: 17px;
+        color: #957a67;
+        position: absolute;
+        text-transform: uppercase;
+        word-spacing: 7px;
+        letter-spacing: 4px;
+        font-family: initial;
+        top: 70px;
+        left: 201px;
+      }
+      > .twochild {
+        font-size: 17px;
+        color: #957a67;
+        position: absolute;
+        text-transform: uppercase;
+        word-spacing: 7px;
+        letter-spacing: 4px;
+        font-family: initial;
+        top: 95px;
+        left: 165px;
+      }
+      > h2 {
+        position: absolute;
+        color: #201c1c;
+        top: 127px;
+        left: 113px;
+        font-size: 45px;
+        font-family: "manubar";
+      }
+      > h1 {
+        position: absolute;
+        color: #201c1c;
+        top: 180px;
+        left: 228px;
+        font-size: 45px;
+        font-family: "manubar";
+      }
+      > p {
+        width: 380px;
+        position: absolute;
+        top: 248px;
+        left: 118px;
+        text-align: center;
+        font-family: "manubar";
+        font-weight: normal;
+        font-size: 17px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+      }
+      > button {
+        position: absolute;
+        top: 413px;
+        left: 232px;
+        background-color: #57646d;
+        color: #fff9f9;
+        padding: 8px 24px;
+        border: none;
+        text-transform: uppercase;
+        font-family: cursive;
+        letter-spacing: 3px;
+        font-size: 10px;
+        word-spacing: 3px;
+        &:hover {
+          background-color: #384650;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+// third_div
+
+.third_div {
+  width: 100%;
+  height: 400px;
+  background-color: #997c6c;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+  > div {
+    margin: auto;
+    position: relative;
+    &::before {
+      content: "let's tap into";
+      position: absolute;
+      top: -32px;
+      left: -35px;
+      font-family: tdiv;
+      font-size: 40px;
+      color: #f6f0e8;
+    }
+    &::after {
+      content: "the unstoppable";
+      position: absolute;
+      bottom: -16px;
+      right: -56px;
+      font-family: tdiv;
+      font-size: 40px;
+      color: #f6f0e8;
+    }
+    > .timg {
+      @include imagecode();
+      width: 400px;
+    }
+  }
+}
+
+// fourt_div
+
+.fourth_div {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, #f2eadf, $mybg);
 }
