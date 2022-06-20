@@ -290,7 +290,7 @@
 
 .fourth_div {
   width: 100%;
-  height: 715px;
+  height: 810px;
   background: linear-gradient(to right, #f2eadf, #d2a890);
   position: relative;
 }
@@ -380,4 +380,77 @@
 }
 .fallgrid > div .fourthgridchild3 h1 {
   left: 20px !important;
+}
+
+.fiveth_div {
+  width: 100%;
+  height: 420px;
+  background-color: white;
+  padding: 40px 30px;
+  margin: auto;
+}
+.fiveth_div > .gridpic {
+  display: grid;
+  grid-gap: 6px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fiveth_div > .gridpic > div {
+  margin: auto;
+  position: relative;
+}
+.fiveth_div > .gridpic > div > img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  width: 300px;
+  height: 300px;
+}
+.fiveth_div > .gridpic .gridpicimg::before {
+  content: "Project title";
+  position: absolute;
+  bottom: 2px;
+  right: 45px;
+  text-transform: uppercase;
+  color: #4e5357;
+  background-color: white;
+  font-family: "icon";
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  padding: 4px 12px;
+  transform: translateY(50%);
+}
+
+.sixth_div {
+  width: 100%;
+  height: 600px;
+  background-color: #57666d;
+  display: flex;
+}
+.sixth_div .width_container {
+  margin: auto;
+  display: flex;
+}
+.sixth_div .width_container > div {
+  position: relative;
+}
+.sixth_div .width_container > div img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  width: 320px;
+}
+.sixth_div .width_container > div::after {
+  content: "freedom bizz mastery";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fffdf4;
+  background-color: rgba(204, 162, 140, 0.6117647059);
+}
+.sixth_div .width_container > .salltext {
+  width: 600px;
 }/*# sourceMappingURL=style.css.map */
