@@ -290,8 +290,9 @@
 
 .fourth_div {
   width: 100%;
-  height: 600px;
+  height: 715px;
   background: linear-gradient(to right, #f2eadf, #d2a890);
+  position: relative;
 }
 .fourth_div > .heading {
   text-align: center;
@@ -304,9 +305,11 @@
 }
 
 .fallgrid {
-  padding: 30px;
+  padding: 0px 100px;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 80px;
+  left: 0;
 }
 .fallgrid img {
   background-size: cover;
@@ -319,7 +322,62 @@
           clip-path: circle(50% at 50% 83%);
 }
 .fallgrid > div {
-  display: grid;
+  display: grid !important;
   grid-gap: 16px;
   grid-template-columns: repeat(3, 1fr);
+}
+.fallgrid > div > div {
+  margin: auto;
+}
+.fallgrid > div > div .pclass {
+  width: 300px;
+  position: relative;
+}
+.fallgrid > div > div .pclass > h1 {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: tdiv;
+  font-size: 26px;
+  text-align: center;
+  color: #4e5858;
+}
+.fallgrid > div > div .pclass > p {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  text-align: center;
+  font-family: "manubar";
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+.fallgrid > div > div .pclass > button {
+  position: absolute;
+  top: 245px;
+  left: 66px;
+  background-color: #57646d;
+  color: #fff9f9;
+  padding: 8px 24px;
+  border: none;
+  text-transform: uppercase;
+  font-family: cursive;
+  letter-spacing: 3px;
+  font-size: 10px;
+  word-spacing: 3px;
+}
+.fallgrid > div > div .pclass > button:hover {
+  background-color: #384650;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.fallgrid > div .fourthgridchild1 h1 {
+  left: 20px !important;
+}
+.fallgrid > div .fourthgridchild2 h1 {
+  left: 62px !important;
+}
+.fallgrid > div .fourthgridchild3 h1 {
+  left: 20px !important;
 }/*# sourceMappingURL=style.css.map */

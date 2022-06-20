@@ -300,8 +300,9 @@ $mybg: #d2a890;
 
 .fourth_div {
   width: 100%;
-  height: 600px;
+  height: 715px;
   background: linear-gradient(to right, #f2eadf, $mybg);
+  position: relative;
 
   > .heading {
     text-align: center;
@@ -314,9 +315,11 @@ $mybg: #d2a890;
   }
 }
 .fallgrid {
-  padding: 30px;
+  padding: 0px 100px;
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 80px;
+  left: 0;
 
   img {
     @include imagecode();
@@ -325,8 +328,71 @@ $mybg: #d2a890;
     clip-path: circle(50% at 50% 83%);
   }
   > div {
-    display: grid;
+    display: grid !important;
     grid-gap: 16px;
     grid-template-columns: repeat(3, 1fr);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // width: 300px;
+    > div {
+      margin: auto;
+      .pclass {
+        width: 300px;
+        position: relative;
+        > h1 {
+          position: absolute;
+          top: 25px;
+          left: 0px;
+          font-family: tdiv;
+          font-size: 26px;
+          text-align: center;
+          color: #4e5858;
+        }
+
+        > p {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          text-align: center;
+          font-family: "manubar";
+          font-weight: normal;
+          font-size: 17px;
+          letter-spacing: 2px;
+          word-spacing: 5px;
+        }
+        > button {
+          position: absolute;
+          top: 245px;
+          left: 66px;
+          background-color: #57646d;
+          color: #fff9f9;
+          padding: 8px 24px;
+          border: none;
+          text-transform: uppercase;
+          font-family: cursive;
+          letter-spacing: 3px;
+          font-size: 10px;
+          word-spacing: 3px;
+          &:hover {
+            background-color: #384650;
+            cursor: pointer;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+
+    .fourthgridchild1 h1 {
+      left: 20px !important;
+    }
+    .fourthgridchild2 h1 {
+      left: 62px !important;
+    }
+    .fourthgridchild3 h1 {
+      left: 20px !important;
+    }
   }
 }
+
+// fiveth_div
