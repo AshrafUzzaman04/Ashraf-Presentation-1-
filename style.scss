@@ -248,10 +248,11 @@ $mybg: #d2a890;
         letter-spacing: 3px;
         font-size: 10px;
         word-spacing: 3px;
+        transition: 0.5s;
         &:hover {
           background-color: #384650;
           cursor: pointer;
-          border-radius: 6px;
+          border-radius: 8px;
         }
       }
     }
@@ -374,10 +375,11 @@ $mybg: #d2a890;
           letter-spacing: 3px;
           font-size: 10px;
           word-spacing: 3px;
+          transition: 0.5s;
           &:hover {
             background-color: #384650;
             cursor: pointer;
-            border-radius: 6px;
+            border-radius: 8px;
           }
         }
       }
@@ -445,10 +447,12 @@ $mybg: #d2a890;
   height: 600px;
   background-color: #57666d;
   display: flex;
+
   .width_container {
     margin: auto;
     display: flex;
-    > div {
+
+    .girl_smile {
       position: relative;
       img {
         @include imagecode();
@@ -457,14 +461,77 @@ $mybg: #d2a890;
       &::after {
         content: "freedom bizz mastery";
         position: absolute;
-        bottom: 0;
+        bottom: 50px;
         right: 0;
         color: #fffdf4;
-        background-color: #cca28c9c;
+        padding: 20px 30px;
+        font-size: 43px;
+        margin: 13px;
+        text-transform: lowercase;
+        font-family: "hfont";
+        background-color: rgba(204, 162, 140, 0.6117647059);
+        text-align: center;
       }
     }
-    > .salltext {
-      width: 600px;
+    .salltext {
+      width: 500px;
+      margin: 0px 50px;
+      text-align: center;
+      > h1 {
+        font-size: 45px;
+        font-family: "manubar";
+        color: #f5f1e9;
+      }
+      > p {
+        text-align: center;
+        font-family: "manubar";
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: #f7feff;
+        line-height: 23px;
+        padding: 20px 0px;
+      }
+      > input {
+        padding: 10px 18px;
+        display: flex;
+        margin: auto;
+        width: 310px;
+        font-family: "heading";
+        margin-bottom: 10px;
+        border: none;
+        margin-top: 3px;
+        outline: none;
+      }
+      > button {
+        font-size: 12px;
+        padding: 12px 25px;
+        background-color: #cca28c;
+        text-transform: uppercase;
+        border: none;
+        margin-top: 25px;
+        font-family: "tdiv";
+        font-weight: bold;
+        color: #4c5a50;
+        transition: 0.5s;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        &:hover {
+          box-shadow: 0px 0px 15px -7px black;
+          color: white;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+      }
     }
   }
+}
+
+// seventh_div
+
+.seventh_div {
+  width: 100%;
+  height: 600px;
+  background-color: #f4efeb;
 }

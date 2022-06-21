@@ -243,11 +243,12 @@
   letter-spacing: 3px;
   font-size: 10px;
   word-spacing: 3px;
+  transition: 0.5s;
 }
 .second_div .scontent .stext > button:hover {
   background-color: #384650;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .third_div {
@@ -366,11 +367,12 @@
   letter-spacing: 3px;
   font-size: 10px;
   word-spacing: 3px;
+  transition: 0.5s;
 }
 .fallgrid > div > div .pclass > button:hover {
   background-color: #384650;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 .fallgrid > div .fourthgridchild1 h1 {
   left: 20px !important;
@@ -433,24 +435,85 @@
   margin: auto;
   display: flex;
 }
-.sixth_div .width_container > div {
+.sixth_div .width_container .girl_smile {
   position: relative;
 }
-.sixth_div .width_container > div img {
+.sixth_div .width_container .girl_smile img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 500px;
   width: 320px;
 }
-.sixth_div .width_container > div::after {
+.sixth_div .width_container .girl_smile::after {
   content: "freedom bizz mastery";
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   right: 0;
   color: #fffdf4;
+  padding: 20px 30px;
+  font-size: 43px;
+  margin: 13px;
+  text-transform: lowercase;
+  font-family: "hfont";
   background-color: rgba(204, 162, 140, 0.6117647059);
+  text-align: center;
 }
-.sixth_div .width_container > .salltext {
-  width: 600px;
+.sixth_div .width_container .salltext {
+  width: 500px;
+  margin: 0px 50px;
+  text-align: center;
+}
+.sixth_div .width_container .salltext > h1 {
+  font-size: 45px;
+  font-family: "manubar";
+  color: #f5f1e9;
+}
+.sixth_div .width_container .salltext > p {
+  text-align: center;
+  font-family: "manubar";
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #f7feff;
+  line-height: 23px;
+  padding: 20px 0px;
+}
+.sixth_div .width_container .salltext > input {
+  padding: 10px 18px;
+  display: flex;
+  margin: auto;
+  width: 310px;
+  font-family: "heading";
+  margin-bottom: 10px;
+  border: none;
+  margin-top: 3px;
+  outline: none;
+}
+.sixth_div .width_container .salltext > button {
+  font-size: 12px;
+  padding: 12px 25px;
+  background-color: #cca28c;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 25px;
+  font-family: "tdiv";
+  font-weight: bold;
+  color: #4c5a50;
+  transition: 0.5s;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.sixth_div .width_container .salltext > button:hover {
+  box-shadow: 0px 0px 15px -7px black;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.seventh_div {
+  width: 100%;
+  height: 600px;
+  background-color: #f4efeb;
 }/*# sourceMappingURL=style.css.map */
