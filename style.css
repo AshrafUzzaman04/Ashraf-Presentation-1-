@@ -407,6 +407,7 @@
   width: 500px;
   width: 300px;
   height: 300px;
+  transition: 0.5s;
 }
 .fiveth_div > .gridpic .gridpicimg::before {
   content: "Project title";
@@ -581,6 +582,91 @@
 
 .eighth_divfooter {
   width: 100%;
-  height: 500px;
+  height: 425px;
   background-color: #987d6c;
+}
+.eighth_divfooter .footer_first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+.eighth_divfooter .footer_first .list {
+  text-align: center;
+}
+.eighth_divfooter .footer_first .list > ul {
+  padding: 30px 0px;
+}
+.eighth_divfooter .footer_first .list > ul > li {
+  list-style: none;
+}
+.eighth_divfooter .footer_first .list > ul > li > a {
+  text-decoration: none;
+  color: #fff6ea;
+  font-family: "manubar";
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 3px;
+  word-spacing: 6px;
+  transition: 0.5s;
+}
+.eighth_divfooter .footer_first .list > ul > li > a:hover {
+  color: #ffcb88;
+}
+.eighth_divfooter .footer_first .grid_footer {
+  width: 312px;
+  display: grid;
+  grid-gap: 6px;
+  margin: 0px 59px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.eighth_divfooter .footer_first .grid_footer > div {
+  margin: auto;
+}
+.eighth_divfooter .footer_first .grid_footer > div > img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  width: 100px;
+  height: 100px;
+}
+.eighth_divfooter .contact_footer > .lets_contact > span {
+  color: #fff6ea;
+  text-transform: uppercase;
+  font-size: 13px;
+  word-spacing: 2px;
+  letter-spacing: 7px;
+  font-family: "manubar";
+}
+.eighth_divfooter .logo_footer {
+  text-align: center;
+}
+.eighth_divfooter .logo_footer > ul {
+  display: flex;
+  margin-left: 34px;
+  margin-top: 20px;
+}
+.eighth_divfooter .logo_footer > ul > li {
+  list-style: none;
+}
+.eighth_divfooter .logo_footer > ul > li > a {
+  text-decoration: none;
+  margin: 8px;
+  color: #fff5ed;
+}
+.eighth_divfooter .footer_class {
+  text-align: center;
+  width: 520px;
+  margin: auto;
+}
+.eighth_divfooter .footer_class > span {
+  color: #fff6ea;
+  text-transform: uppercase;
+  font-family: "manubar";
+  word-spacing: 6px;
+  letter-spacing: 3px;
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */
