@@ -301,7 +301,7 @@ $mybg: #d2a890;
 
 .fourth_div {
   width: 100%;
-  height: 810px;
+  height: 755px;
   background: linear-gradient(to right, #f2eadf, $mybg);
   position: relative;
 
@@ -532,6 +532,74 @@ $mybg: #d2a890;
 
 .seventh_div {
   width: 100%;
-  height: 600px;
+  height: 810px;
   background-color: #f4efeb;
+  justify-content: center;
+  align-items: center;
+
+  > .rtext {
+    text-align: center;
+    padding: 50px;
+    > span {
+      font-size: 42px;
+      color: black;
+      font-family: heading;
+    }
+  }
+  > .grid_img {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 50px;
+    > div {
+      margin: auto;
+      margin: auto;
+      height: -webkit-fill-available;
+    }
+    p {
+      width: 300px;
+      text-align: center;
+      color: #b47d5f;
+      text-transform: uppercase;
+      font-family: fangsong;
+      word-spacing: 5px;
+      letter-spacing: 2px;
+      font-size: 18px;
+      padding: 35px 0px;
+    }
+  }
+  .button_gridpart {
+    margin: auto;
+    text-align: center;
+    button {
+      background-color: #57646d;
+      color: #fff9f9;
+      padding: 10px 24px;
+      border: none;
+      text-transform: uppercase;
+      font-family: cursive;
+      letter-spacing: 3px;
+      font-size: 10px;
+      word-spacing: 3px;
+      transition: 0.5s;
+      &:hover {
+        background-color: #384650;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  img {
+    @include imagecode();
+    width: 300px;
+  }
+}
+
+// eighth_div
+
+.eighth_divfooter {
+  width: 100%;
+  height: 500px;
+  background-color: #987d6c;
 }
